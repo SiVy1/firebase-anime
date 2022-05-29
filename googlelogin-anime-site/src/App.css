@@ -1,0 +1,38 @@
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(4, 15, 22);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #13415d;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1341ff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #040f16;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #040f16;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #06151e;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }

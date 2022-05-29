@@ -1,0 +1,167 @@
+
+.container{
+    display: grid;
+    grid-template-columns: 150px 200px 1fr 100px;
+    grid-template-rows: 175px 225px 1fr;
+}
+.background-photo > img{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+     width: 100vw;  
+     height: 300px;
+     object-fit: cover;
+}
+.prof-card{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.user-name{
+    display: flex;
+    /* font-weight: 900; */
+    font-size: 20px;
+    margin-top: 135px;
+    color: #FBFBFF;
+    margin-left: 10px;
+}
+
+.photo-card > img{
+    height: 200px;
+    border-radius: 20px;
+    width: 200px;
+}   
+.photo-card{
+    display: flex;
+}
+.follow-button{
+    display: flex;
+    cursor: pointer;
+    bottom: 0px;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+.anime-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px;
+    grid-row-start: 3;
+    grid-column-start:3;
+    grid-gap: 50px;
+}
+.anime-stats{
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    color: #FBFBFF;
+    
+}
+.anime-stats-con{
+    display: flex;    
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #FBFBFF; 
+    color: #040F16;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.stats-name{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.post-content{ 
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 1fr 90px;
+}
+.post-text{
+    grid-column-start: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+.anime-activity{
+    grid-column-start: 2;
+}
+
+.anime-post{
+    /* position: absolute; */
+    margin-top: 20px;   
+    background-color: #FBFBFF;
+    padding: 10px;
+    border-radius: 10px;
+    height: 100px;
+    width: 400px;
+}
+
+.anime-post > img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.anime-post > h3{
+    margin-left: 5px;
+}
+
+.span-stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-activity{
+    color: #FBFBFF
+}
+
+.post-pic{
+    grid-column-start: 2;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.stats-name{
+    grid-row-start: 1;
+}
+
+.stats{
+    grid-row-start: 2 ;
+}
+
+.col1stats{
+    grid-column-start: 1;
+}
+.col2stats{
+    grid-column-start: 2;
+}
+.col3stats{
+    grid-column-start: 3;
+}
+.col4stats{
+    grid-column-start: 4;
+}
+.span-stat{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    word-wrap: break-word;
+
+}
