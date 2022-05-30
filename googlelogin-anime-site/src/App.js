@@ -10,6 +10,7 @@ import Navbar from "./components/navbar";
 import Profile from "./components/profile";
 import Test from "./components/test";
 import axios, { Axios } from "axios";
+import Anime from "./components/anime";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -44,8 +45,8 @@ function App() {
             element={user ? <Profile user={user} /> : <Login />}
           ></Route>
           <Route
-            path="/test"
-            element={user ? <Test user={user} /> : <Login />}
+            path="/anime/*"
+            element={user ? <Anime user={user} /> : <Login />}
           ></Route>
         </Routes>
       </Router>

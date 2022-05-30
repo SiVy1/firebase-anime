@@ -15,7 +15,7 @@ export default function useAnimeSearch(pageNumber) {
         axios({
             method:'GET',
             url: 'http://localhost:3002/api/anime',
-            params: { page: pageNumber, limit: '20'},
+            params: { page: pageNumber, limit: '40'},
             cancelToken: new axios.CancelToken(c => cancel = c)
         }).then(res => {
             setAnime(prevAnime => {

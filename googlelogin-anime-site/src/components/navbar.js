@@ -13,7 +13,10 @@ export default function Navbar({ user }) {
   const style = {
     visibility: avatar ? 'visible' : "hidden"
   }
-
+  const [searchBar, isSearchBar] = useState(false)
+  function searchClicked(){
+    isSearchBar(prevState => !prevState)
+  }
   const handle = useFullScreenHandle();
   function avatarChange(){
     const newAvatar = prompt('Avatar:')
@@ -28,7 +31,6 @@ export default function Navbar({ user }) {
         <a href="/">Main</a>
         <a href="/list">List</a>
         <a href="/profile">Profile</a>
-  
       </div>
       <div className="nav-photo" onMouseEnter={avatarClicked} onMouseLeave={avatarClicked}>
         <img src={user.photoURL} alt=""/>

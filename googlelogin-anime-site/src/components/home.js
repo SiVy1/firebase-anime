@@ -41,6 +41,22 @@ const Home = ({ user }) => {
 
   return (
     <div className="home">
+      <div className='search'>
+      <input onChange={event => setSearchWord(event.target.value)}></input>
+      <div className='searched-anime-con' >
+          {searchedAnime.slice(0, 15).map(item =>{
+            return (
+              <div className="searched-anime" key={item.title}>
+                    <a href={"/anime/"+item.title}>
+                    <img src={item.picture} alt='anime picture' className='searched-image'/>
+                    <span>{item.title}</span>
+                    
+                    </a>
+                  </div>
+            )
+        })}
+        </div>
+      </div>
       <div className='anime-root'>
       {anime.map((item, index) => {
         if(anime.length === index + 1){
@@ -69,19 +85,7 @@ const Home = ({ user }) => {
       <div>{loading && 'Loading...'}</div>  
       <div>{error && 'Error'}</div>  
       </div>
-      <div className='search'>
-      <input onChange={event => setSearchWord(event.target.value)}></input>
-      <div className='searched-anime-con' >
-          {searchedAnime.slice(0, 15).map(item =>{
-            return (
-                  <div className="searched-anime" key={item.title}>
-                    <img src={item.picture} />
-                    <a href={item.title}>{item.title}</a>
-                  </div>
-            )
-        })}
-        </div>
-      </div>
+      
     </div>
   )
 }
