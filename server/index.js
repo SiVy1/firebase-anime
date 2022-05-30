@@ -77,22 +77,6 @@ const profilePic = req.body.user.photoURL;
         });  
     }})
 })
-// Route to like a post
-app.post('/api/user/post',(req,res)=>{
-
-db.query("SELECT * FROM user WHERE ID = '15';", function (err, result, fields) {
-    if (err) throw err;
-    console.log(result);
-    if(result == null || result.length === 0){
-        db.query("INSERT INTO `user`(`ID`, `UserName`, `profilePic`) VALUES ('57','1','1')", (err,result)=>{
-            if(err) {
-           console.log(err)   } 
-           console.log(result)
-            });    
-    }
-  });
-
-});
 
 // Route to delete a post
 
